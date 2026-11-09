@@ -3,7 +3,9 @@
     FIRST_COL=1                             
     LAST_COL=60                             
     LAST_ROW=25 
+    
     WALL_CHAR="#"
+    APPLE_CHAR='Q'
 
     SNAKE_SIZE=3                             
     DELAY=0.2
@@ -21,6 +23,6 @@
     SCORE=0                     
 
 # Pad out arrays
-    ZEROES=`echo |awk '{printf("%0"'"$SNAKESIZE"'"d\n",$1)}' | sed 's/0/0 /g'`
+    ZEROES=`echo |awk '{printf("%0"'"$SNAKE_SIZE"'"d\n",$1)}' | sed 's/0/0 /g'`
     LAST_POS_X=( $ZEROES )                   
     LAST_POS_Y=( $ZEROES )  
