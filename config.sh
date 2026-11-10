@@ -10,6 +10,7 @@
 
     SNAKE_SIZE=3                             
     DELAY=0.2
+    RESTART_DELAY=3
 
     AREA_MAX_X=$(( $LAST_COL - 1 ))           
     AREA_MIN_X=$(( $FIRST_COL + 1 ))          
@@ -22,7 +23,8 @@
     POS_Y=$ORIGIN_Y     
 
     SCORE=0              
-    DIRECTION="w"       
+    DIRECTION="w"   
+    QUIT_FLAG=0    
 
 # Pad out arrays
     ZEROES=`echo |awk '{printf("%0"'"$SNAKE_SIZE"'"d\n",$1)}' | sed 's/0/0 /g'`
