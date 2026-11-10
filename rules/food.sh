@@ -32,6 +32,6 @@ check_apple_collision() {
     then    
         update_score 10
         coordinates_check_and_print
-        draw_snake
+        grow_snake
     fi
 }

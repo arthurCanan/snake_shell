@@ -6,6 +6,7 @@
     
     WALL_CHAR="#"
     APPLE_CHAR='Q'
+    SNAKE_CHAR='@'
 
     SNAKE_SIZE=3                             
     DELAY=0.2
@@ -20,7 +21,8 @@
     POS_X=$ORIGIN_X                           
     POS_Y=$ORIGIN_Y     
 
-    SCORE=0                     
+    SCORE=0              
+    DIRECTION="w"       
 
 # Pad out arrays
     ZEROES=`echo |awk '{printf("%0"'"$SNAKE_SIZE"'"d\n",$1)}' | sed 's/0/0 /g'`

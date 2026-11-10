@@ -11,5 +11,9 @@ game_over() {
     sleep $DELAY
     trap exit ALRM
     tput cup $ROWS 0
-    exit
+    exit 0
 }
+
+# check_collision() {
+
+# }
