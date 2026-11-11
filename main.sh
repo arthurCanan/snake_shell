@@ -38,8 +38,8 @@ Q - QUIT
 
         $'')
     
-            #stty -echo
-            #tput civis
+            stty -echo
+            tput civis
             #read RTN
             tput setb 0
             tput bold
